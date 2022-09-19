@@ -22,7 +22,7 @@ void rev_string(char *s)
 		s[finish] = t;
 		ini++;
 		finish--;
-	
+
 	}
 
 }
