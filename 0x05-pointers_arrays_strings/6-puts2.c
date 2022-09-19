@@ -11,7 +11,7 @@
 void puts2(char *str)
 {
 
-	int i = 0 
+	int i = 0;
 
 	while (*(str + i) != '\0')
 	{
@@ -20,5 +20,6 @@ void puts2(char *str)
 			putchar(*(str + i));
 		i++;
 	}
+	putchar(10);
 	putchar(10);
 }
