@@ -1,29 +1,25 @@
 #include "main.h"
-
 /**
-* puts_half - print elve numbers
-* @str: pointer to string
-* Return: Nothing
-*/
-
-void puts_half(char *str)
+ * puts_half - function that ptints half of a string, followed by a new line.
+ * @str: this is the input string
+ */
+void _puts_half(char *str)
 {
+	int index, half;
 
-	int len = 0, i = 0, st;
+	index = 0;
+	while (str[index] != '\0')
+		index++;
 
-	while (*(str + len) != '\0')
+	half = index / 2;
+
+	if (index % 2 ==1)
+		half++;
+
+	while (half < index)
 	{
-		len++;
+		_putchar(str[half]);
+		half++;
 	}
-
-	st = ((len - 1) / 2) + 1;
-	
-	for (i = st; i < len; i++)
-	{
-		_putchar(*(str + i));
-
-	}
-
 	_putchar('\n');
-
 }
