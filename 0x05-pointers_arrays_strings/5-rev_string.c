@@ -1,24 +1,28 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-*puts2 - prints every other character
-*@str: string
-*
-*Return: nothing
+* rev_string - this characters in reverse.
+* @s: this is a parameter to change.
 */
-
-void puts2(char *str)
+void rev_string(char *s)
 {
 
-	int i = 0
+	int ini = 0, finish = 0;
+	char t;
 
-	while (*(str + i) != '\0')
+	while (s[finish] != 0)
+		finish++;
+	finish--;
+
+	while (ini < finish)
 	{
 
-		if (i % 2 == 0)
-			putchar(*(str + i));
-		i++;
+		t = s[ini];
+		s[ini] = s[finish];
+		s[finish] = t;
+		ini++;
+		finish--;
+	
 	}
-	putchar(10);
+
 }
