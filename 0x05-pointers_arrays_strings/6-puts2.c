@@ -21,5 +21,4 @@ void puts2(char *str)
 		i++;
 	}
 	putchar(10);
-	putchar(10);
 }
