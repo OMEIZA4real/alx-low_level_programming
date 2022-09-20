@@ -2,33 +2,26 @@
 
 /**
  * puts_half - prints half of a string
- * @str: The string to print
  *
- * Return: void
+ * @str: string parameter input
+ *
+ * Return: Nothing
  */
+
 void puts_half(char *str)
 {
-	int j = 0;
-	int k;
+	int l, n;
 
-	while (str[j] != '\0')
-	{
-		j++;
-	}
+	for (l = 0; str[l] != '\0'; ++l);
 
-	if (j % 2 == 1)
+	if (l % 2 == 0)
 	{
-		k = (j - 1) / 2;
-		k+= 1;
-	}
-	else
+		for (n = l / 2; str[n] != '\0'; ++n)
+			_putchar(str[n]);
+	} else
 	{
-		k = j / 2;
-	}
-
-	for (; k < j; k++)
-	{
-		_putchar(str[k]);
+		for (n = ((l - 1) / 2) + 1; str[n] != '\0'; ++n)
+			_putchar(str[n]);
 	}
 
 	_putchar('\n');
