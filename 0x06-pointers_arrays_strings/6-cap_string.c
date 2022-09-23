@@ -23,13 +23,12 @@ char *cap_string(char *s)
 				{
 					if (a[j] == *(s + i - 1))
 						*(s + i) -= 'a' - 'A';
-
 				}
 
 			}
 
 		}
-		i++
+		i++;
 
 	}
 	return (s);
