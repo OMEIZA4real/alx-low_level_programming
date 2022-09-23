@@ -66,7 +66,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		temp_tot = val1 + val2 + overflow;
 		if (temp_tot >= 10)
 			overflow = 1;
-
 		else
 			overflow = 0;
 		if (digits >= (size_r - 1))
@@ -75,7 +74,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		digits++;
 		j--;
 		i--;
-
 	}
 	if (digits == size_r)
 		return (0);
