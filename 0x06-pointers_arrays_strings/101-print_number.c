@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_number - prints an integer
- * @n: input integer parameter
+ * @n: the integer to be printed
  *
  */
 void print_number(int n)
@@ -10,7 +10,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar(45);
+		_putchar('.');
 		i = -i;
 
 	}
